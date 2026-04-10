@@ -1,3 +1,23 @@
+/*
+ * Program: Ranking Data Organizer
+ *
+ * Description:
+ * This program reads a text file containing institutional ranking data,
+ * where each line is structured as:
+ *     GroupCode | RankingPosition | InstitutionName | Score
+ *
+ * The program processes the file and:
+ *  - Groups entries by their group code
+ *  - Creates a separate output file for each group
+ *  - Writes all corresponding records into each group file
+ *  - Generates an index file summarizing each group, including:
+ *      * Group code
+ *      * Last institution processed
+ *      * Ranking position
+ *      * Output file path
+ *      * Number of records in the group
+ *
+
 import os
 from pathlib import Path
 
