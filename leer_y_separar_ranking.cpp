@@ -17,7 +17,7 @@
  *      * Output file path
  *      * Number of records in the group
  *
-
+ */
 import os
 from pathlib import Path
 
